@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-index
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>¡Bienvenido a mi Frontend en Kubernetes!</title>
+      <style>
+        body {
+          background: linear-gradient(135deg, #667eea, #764ba2);
+          color: white;
+          font-family: 'Arial', sans-serif;
+          text-align: center;
+          padding-top: 100px;
+          height: 100vh;
+          margin: 0;
+        }
+        h1 { font-size: 3em; margin-bottom: 20px; }
+        p { font-size: 1.5em; }
+        footer { position: absolute; bottom: 20px; width: 100%; font-size: 0.9em; color: rgba(255, 255, 255, 0.7); }
+      </style>
+    </head>
+    <body>
+      <h1>🚀 ¡Hola actualizado desde ConfigMap! 🚀</h1>
+      <p>Ahora los cambios son en vivo con GitOps 😎</p>
+      <footer>Powered by Gonza ⚡</footer>
+    </body>
+    </html>
